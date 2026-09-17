@@ -1,7 +1,7 @@
 requires "syntax.k"
 
-module IMP
-	imports IMP-SYNTAX-COMMON
+module PASCAL
+	imports PASCAL-SYNTAX-COMMON
 	imports INT
 	imports BOOL
 	imports ID

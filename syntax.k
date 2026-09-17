@@ -5,7 +5,7 @@ module PASCAL-STRING-SYNTAX
 	syntax String ::= r"'(({StringElement})+)'" [token]
 endmodule
 
-module IMP-SYNTAX-COMMON
+module PASCAL-SYNTAX-COMMON
 	imports UNSIGNED-INT-SYNTAX
 	imports ID-SYNTAX
 	imports BOOL-SYNTAX
@@ -198,8 +198,8 @@ rule array [ I:IndexType , I2:IndexType, I3:IndexTypes ] of C:ComponentType => a
 
 endmodule
 
-module IMP-SYNTAX
-	imports IMP-SYNTAX-COMMON
+module PASCAL-SYNTAX
+	imports PASCAL-SYNTAX-COMMON
 
 
 syntax lexical CommentStart = r"(\\{)"
